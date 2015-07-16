@@ -1,0 +1,645 @@
+body{
+	background-color:#4E4343;
+}	
+
+#page{
+	margin:3em 16em;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #670303;
+	box-shadow: .5em .5em .25em black;	
+}
+
+header{
+	font-family: Georgia, "Times New Roman", serif;	
+	background-color:#293452;
+	border-bottom-color:white;
+	border-bottom-width:.25em;
+	border-bottom-style:solid;
+}
+
+#regButton{
+	float: right;
+	margin: 1em 1em 0 0;
+}
+
+#EntryFormHead{
+	margin:1.5em 0 0 8em;
+	color:#FDFF02;
+	font-size:1.375em;
+	font-weight:bold;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#EntryForm{
+	width:40%;
+	background-color:#4E4343;
+	margin: 1em auto;
+	margin-bottom:2em;
+	text-align:center;
+	padding: 1em 3em;
+	color:white;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+.EntryFormBox{
+	clear:both;
+	margin: 1em 0 .25em 0;
+	height:3em;
+	width:100%;
+}
+
+.EntryFormText{
+	width:38%;
+	float:left;
+	text-align:right;
+}
+
+
+.EntryFormInput{
+	width:58%;
+	float:left;
+	text-align:left;
+}
+
+#EntryForm input{
+	color:black;
+}
+
+#EntryForm input[type="text"], input[type="password"] {
+	padding: .625em;
+  	border: solid .125em #fff;
+  	box-shadow: inset .0625em .0625em .125em 0 #707070;
+  	transition: box-shadow 0.6s;
+  	font-size:1em;
+}
+
+#page input[type="submit"]{
+	border-width:.3125em;
+	padding: .3125em .85em;
+	font-size:.85em;
+	font-weight:bold;
+}
+
+#EntryFormOptions{
+	clear:both;
+	width:100%;
+	text-align:center;
+	margin:1em auto;
+}
+
+#LoggedIn{
+	display:none;
+	width:40%;
+	background-color:#4E4343;
+	margin: 1em auto;
+	margin-bottom:2em;
+	text-align:center;
+	padding: 1em 3em;
+	color:white;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+	display:none;
+}
+
+#LoggedInText{
+	display:none;
+	text-align:center;
+}
+
+#LoggedIn input[type="submit"]{
+	border-width:.3125em;
+	padding: .3125em .85em;
+	font-size:.85em;
+	font-weight:bold;
+}
+
+#LoggedInLinkButton, #LoggedInBackButton{
+	display:none;
+	margin-top:1em;
+}
+
+#EntryFormOptions1{
+	clear:both;
+	width:50%;
+	float:left;
+	text-align:center;
+}
+
+#EntryFormOptions2{
+	width:50%;
+	float:right;
+	text-align:center;
+}
+
+#errorsRegistration, #errorUserEntry, #errorPassEntry, #errorEmailEntry, #errorNewPass, #errorConfirmNewPass {
+	clear:both;
+	color:#670303;
+	text-align:center;
+	display:none;
+	font-size:.75em;
+}
+
+#RegistrationNotice{
+	color:#670303;
+	background-color:#FDFF02;
+	display:none;
+	text-align:center;	
+}
+
+h1{
+	padding:.5em 0;
+	margin:1em 0 0 1em;
+	text-align:left;
+	font-size:2em;
+	font-weight:bold;
+	color:#FDFF02;
+}
+
+#pageList{
+	margin:2em 2em 1em 2em;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #670303;
+	box-shadow: .5em .5em .25em black;	
+}
+
+#pageHead{
+	margin-top:.5em;
+	text-align:center;
+	color:#FDFF02;
+	font-size:1.5em;
+	font-weight:bold;
+	font-family: Georgia, "Times New Roman", serif;	
+}
+
+#LinksButtonsBox {
+	margin:1em 0;
+	height:2em;
+	width:100%
+}
+
+.LinksButton{
+	float:left;
+	width:33.33%;
+	text-align:center;
+}
+
+#LinksButtonsBox input[type="submit"]{
+	border-width:.3125em;
+	padding: .3125em .85em;
+	font-size:.85em;
+	font-weight:bold;
+	margin-left:3.75em;
+	margin-right:3em;
+}
+
+#LinksList{
+	width:95%;
+	height:20em;
+	background-color:#4E4343;
+	margin: 0 auto;
+	margin-bottom:1em;
+	padding: .5em .5em;
+	color:white;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+	overflow:auto;
+}
+
+.LinksShort{
+	float:left;
+	width:35%;
+	margin-bottom:.5em;
+}
+
+.LinksURL{
+	float:left;
+	width:53%;
+	margin-bottom:.5em;
+}
+
+#LinksDelete, #LinksAnalyse {
+	margin-left:1em;
+	float:left;
+	width:4%;
+}
+
+#LinksDelete a, #LinksAnalyse a{
+	border: 4px outset;
+  	padding: 2px;
+  	text-decoration: none;
+  	background-color:#DDDDDD;
+  	color:black;
+  	font-size:.75em;
+}
+
+#LinksAnalyse a:visited {
+	text-decoration:none;
+	border: 4px outset;
+	border-color:#DDDDDD;
+  	padding: 2px;
+  	background-color:#DDDDDD;
+  	color:black;
+  	font-size:.75em;
+}
+
+#UsesList a:visited{
+	padding:0;
+	margin:0;
+	border-color:red;
+}
+
+#AnalysisList hr{
+	border-color:#F80B2B;
+}
+
+#ChangePassForm {
+	position:absolute;
+	top:15em;
+	left:25em;
+	background-color:yellow;
+	color:black;
+	width:30%;
+	margin: 1em auto;
+	margin-bottom:2em;
+	text-align:center;
+	padding: 1em 3em;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+	display:none;
+}
+
+#ChangePassForm input[type="text"], #CreateNewForm input[type="text"]{
+	padding: .625em;
+  	border: solid .125em #fff;
+  	box-shadow: inset .0625em .0625em .125em 0 #707070;
+  	transition: box-shadow 0.6s;
+  	font-size:1em;
+}
+
+#ChangePassForm input[type="submit"], #CreateNewForm input[type="submit"]{
+	border-width:.3125em;
+	padding: .3125em .85em;
+	font-size:.85em;
+	font-weight:bold;
+}
+
+#PasswordChangeOptions{
+	clear:both;
+	margin: 1em 0 .25em 0;
+	height:3em;
+	width:100%;
+}
+
+#PasswordChangedOptions{
+	display:none;
+	clear:both;
+	margin: 1em 0 .25em 0;
+	height:3em;
+	width:100%;
+}
+
+#CreateNewForm{
+	position:absolute;
+	top:15em;
+	left:10em;
+	background-color:yellow;
+	color:black;
+	width:70%;
+	margin: 1em auto;
+	margin-bottom:2em;
+	text-align:center;
+	padding: 1em 3em;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+	display:none;
+}
+
+.URLFormText{
+	width:13%;
+	float:left;
+	text-align:right;
+}
+
+
+.URLFormInput{
+	width:79%;
+	float:left;
+	text-align:left;
+}
+
+#pageAdmin{
+	margin:5em 18em;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #670303;
+	box-shadow: .5em .5em .25em black;	
+}
+
+#AdminUsedBox{
+	width:30%;
+	float:left;
+	background-color:#4E4343;
+	margin: 2em 2em;
+	padding: 1em;
+	color:white;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+.AdminBoxText{
+	font-weight:bold;
+	padding-bottom:.5em;
+}
+
+.AdminBoxQty{
+	margin:0 1em;
+}
+
+.AdminBoxQty input[type="text"]{
+	width:100%;
+	font-weight:bold;
+	font-size:1.5em;
+	text-align:center;
+}
+
+#AdminAvailableBox{
+	width:30%;
+	float:right;
+	background-color:#4E4343;
+	margin: 2em 2em;
+	padding: 1em;
+	color:white;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+#AdminExtendBox{
+	clear:both;
+	width:30%;
+	background-color:#4E4343;
+	margin: 2em auto;
+	padding: 1em;
+	color:white;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+#AdminButtons{
+	width:60%;
+	margin: 0 auto;
+	padding-bottom: 4em;
+}
+
+#AdminButtonsExtend{
+	float:left;
+	width:40%;
+	text-align:center;	
+}
+
+#AdminButtonsLogout{
+	float:right;
+	width:40%;
+	text-align:center;
+}
+
+#AdminButtons input[type="submit"]{
+	border-width:.3125em;
+	padding: .3125em .85em;
+	font-size:1em;
+	font-weight:bold;
+}
+
+#NewShortyForm {
+	position:absolute;
+	top:15em;
+	left:15em;
+	background-color:yellow;
+	color:black;
+	width:50%;
+	margin: 1em auto;
+	margin-bottom:2em;
+	text-align:center;
+	padding: 1em 3em;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+	display:none;
+}
+
+#NewShortyText{
+	display:none;
+	clear:both;
+	margin: 1em 0 .25em 0;
+	height:2em;
+	width:100%;	
+}
+#NewShortyOptions {
+	clear:both;
+	margin: 1em 0 .25em 0;
+	height:2em;
+	width:100%;
+}
+
+#NewShortyOptions input[type="submit"], #CreateNewForm input[type="submit"]{
+	border-width:.3125em;
+	padding: .3125em .85em;
+	font-size:.85em;
+	font-weight:bold;
+}
+
+#pageAnalysis{
+	margin:.75em .75em;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #670303;
+	box-shadow: .5em .5em .25em black;	
+}
+
+#headingBox{
+	float:left;
+	width:95%;
+	margin:1em;
+	background-color:#4E4343;
+	padding: .5em .5em;
+	color:white;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+#headingBoxLeft{
+	float:left;
+	width:7%;
+	font-size:1em;
+}
+
+#headingBoxRight{
+	float:left;
+	width:90%;
+	font-size:1em;
+}
+
+#backButton{
+	margin-right:1em;
+	margin-top:1em;
+	text-align:right;
+}
+
+#backButton [type="submit"]{
+	text-align:center;
+	border-width:.3125em;
+	padding: .3125em .85em;
+	font-size:.75em;
+	font-weight:bold;
+}
+
+#AnalysisUsage {
+	width:96%;
+	margin:1em 0 2em 0;
+	padding: .5em .5em;
+}
+
+#AnalysisUsers {
+	text-align:center;
+	float:left;
+	width:20%;
+	margin:1em 14% 2em 3%;
+	background-color:#4E4343;
+	padding: .5em .5em;
+	color:white;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+#AnalysisUses {
+	text-align:center;
+	float:left;
+	margin:1em 14% 2em 0;
+	width:20%;
+	background-color:#4E4343;
+	padding: .5em .5em;
+	color:white;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+#AnalysisLast {
+	text-align:center;
+	float:left;
+	width:20%;
+	margin:1em 3% 1em 0;
+	background-color:#4E4343;
+	padding: .5em .5em;
+	color:white;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+.AnalsysisResults{
+	color:yellow;
+	font-size:1em;
+}
+
+#UsesList{
+	clear:both;
+	padding: 1em;
+}
+	
+#UsesList table{
+	margin:0 auto;
+	color:black;
+	background-color:white;
+	font-size:12px;
+	font-weight:strong;
+	overflow:auto;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+#UsesList th{
+	text-aign:center;
+	color:white;
+	background-color:#413F3F;
+	font-size:14px;
+	padding:0 5px;
+}
+
+#UsesList table, #UsesList th, #UsesList td{
+	border: 1px solid #413F3F;
+}
+
+#UsesList tr:nth-child(odd){
+	background-color: #E0E0E0;
+}
+
+#AnalysisHours {
+	clear:both;
+	height: 25em; 
+	min-width: 25em; 
+	max-width: 50em;
+	margin: 1em auto;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+#AnalysisCity{
+	clear:both;
+	height: 25em; 
+	min-width: 25em; 
+	max-width: 50em;
+	margin: 1em auto;
+	margin-top: 2em;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+#AnalysisCountry{
+	clear:both;
+	height: 25em; 
+	min-width: 25em; 
+	max-width: 50em;
+	margin: 1em auto;
+	margin-top: 2em;
+	border-color:#293452;
+	border-width:.125em;
+	border-style:solid;
+	box-shadow: .5em .5em .25em #888888;
+}
+
+footer{
+	padding:.5em;
+	background-color:#293452;
+	color:#FDFF02;
+	border-top-color:white;
+	border-top-width:.25em;
+	border-top-style:solid;
+	clear: both;
+}
